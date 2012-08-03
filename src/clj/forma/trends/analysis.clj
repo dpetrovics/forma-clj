@@ -81,7 +81,7 @@
                  (catch Exception e))]
     (if (string? output)
       nil
-      (vec output))))
+      [output])))
 
 ;; Long-term trend characteristic; supporting functions 
 
