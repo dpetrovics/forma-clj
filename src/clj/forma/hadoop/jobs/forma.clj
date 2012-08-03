@@ -138,7 +138,7 @@
         (a/long-stats ?ndvi ?short-precl :> ?long ?t-stat)
         (a/hansen-stat ?ndvi :> ?break)
         (series-end ?ndvi ?start :> ?end)
-        ;;(:trap (hfs-seqfile "s3n://formatemp/trap" :sinkmode :replace))
+        (:trap (hfs-seqfile "s3n://formatemp/trap" :sinkmode :replace))
         (:distinct false))))
 
 (defn count-series
